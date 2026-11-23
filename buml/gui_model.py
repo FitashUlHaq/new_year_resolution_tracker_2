@@ -1340,6 +1340,16 @@ p_10 = Text(
     tag_name="p",
     display_order=0
 )
+r_date = InputField(
+    name="r_date",
+    description="Date input",
+    field_type=InputFieldType.Date,
+    label="Target date",
+    component_id="r-date",
+    tag_name="input",
+    display_order=1,
+    custom_attributes={"id": "r-date", "name": "targetDate", "type": "date"}
+)
 r_title = InputField(
     name="r_title",
     description="Text input",
@@ -1351,16 +1361,6 @@ r_title = InputField(
     tag_name="input",
     display_order=0,
     custom_attributes={"id": "r-title", "name": "title", "required": "", "type": "text", "editable": True}
-)
-r_date = InputField(
-    name="r_date",
-    description="Date input",
-    field_type=InputFieldType.Date,
-    label="Target date",
-    component_id="r-date",
-    tag_name="input",
-    display_order=1,
-    custom_attributes={"id": "r-date", "name": "targetDate", "type": "date"}
 )
 r_description = InputField(
     name="r_description",
@@ -1375,7 +1375,7 @@ r_description = InputField(
 form = Form(
     name="form",
     description="Form component",
-    inputFields={r_title, r_date, r_description},
+    inputFields={r_date, r_title, r_description},
     submit_label="Create resolution",
     tag_name="form",
     display_order=1,
@@ -2217,16 +2217,6 @@ p_20 = Text(
     tag_name="p",
     display_order=0
 )
-h_active = InputField(
-    name="h_active",
-    description="Text input",
-    field_type=InputFieldType.Text,
-    label="Active: true or false",
-    component_id="h-active",
-    tag_name="input",
-    display_order=3,
-    custom_attributes={"id": "h-active", "name": "active", "type": "text", "editable": True}
-)
 h_description = InputField(
     name="h_description",
     description="Text input",
@@ -2236,6 +2226,16 @@ h_description = InputField(
     tag_name="input",
     display_order=2,
     custom_attributes={"id": "h-description", "name": "description", "type": "text", "editable": True}
+)
+h_active = InputField(
+    name="h_active",
+    description="Text input",
+    field_type=InputFieldType.Text,
+    label="Active: true or false",
+    component_id="h-active",
+    tag_name="input",
+    display_order=3,
+    custom_attributes={"id": "h-active", "name": "active", "type": "text", "editable": True}
 )
 h_frequency = InputField(
     name="h_frequency",
@@ -2264,7 +2264,7 @@ h_name = InputField(
 form_2 = Form(
     name="form_2",
     description="Form component",
-    inputFields={h_active, h_description, h_frequency, h_name},
+    inputFields={h_description, h_active, h_frequency, h_name},
     submit_label="Create habit",
     tag_name="form",
     display_order=1,

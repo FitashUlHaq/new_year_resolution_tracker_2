@@ -6387,7 +6387,7 @@
             "symbols": [],
             "version": "0.21.13"
           },
-          "lastUpdate": "2026-11-23T13:20:17.710Z"
+          "lastUpdate": "2026-11-23T13:36:28.625Z"
         }
       ]
     },
@@ -6444,9 +6444,41 @@
         {
           "role": "assistant",
           "content": "Opening the **Deploy to Render** dialog \u2014 please connect to GitHub if you haven\u2019t already, then fill in the repository details and hit **Publish**."
+        },
+        {
+          "role": "user",
+          "content": "add description of methods, make it complete end to end application"
+        },
+        {
+          "role": "assistant",
+          "content": "BESSER will generate your application from the designed specs using its built-in generators. If some of your requirements are not supported by these generators, BESSER can use an LLM to handle them.\n\nBESSER includes a free model by default, so you can generate at no cost. For higher-quality results, you can [set up your own API key](wme:add-key) and use a stronger provider or model.\n\nDo you want to continue?"
+        },
+        {
+          "role": "user",
+          "content": "continue with the generation"
+        },
+        {
+          "role": "assistant",
+          "content": "Generating your application from your specs\u2026"
+        },
+        {
+          "role": "assistant",
+          "content": "\u2705 Generated **67** files with BESSER's `generate_web_app` generator. 9 checks could not be verified. **78%** of files were unchanged from the scaffold in this run. This measures file provenance, not correctness or requirements coverage. Top level: `README.md`, `web_app`. Use the **Download** button on the run card to save it."
+        },
+        {
+          "role": "assistant",
+          "content": "The Spec-Driven Agent finished with 9 unresolved blockers; the application is incomplete. You can run the generation again to finish the remaining changes."
+        },
+        {
+          "role": "user",
+          "content": "deploy"
+        },
+        {
+          "role": "assistant",
+          "content": "Opening the **Deploy to Render** dialog \u2014 please connect to GitHub if you haven\u2019t already, then fill in the repository details and hit **Publish**."
         }
       ],
-      "updatedAt": "2026-11-23T13:15:34.021Z"
+      "updatedAt": "2026-11-23T14:09:25.262Z"
     },
     "attribution": {
       "attr_110qn1pl9_mwta93ho_yx3": {
@@ -6699,7 +6731,7 @@
       }
     }
   },
-  "exportedAt": "2026-11-23T13:20:20.869Z",
+  "exportedAt": "2026-11-23T14:09:27.417Z",
   "version": "2.0.0",
   "editorVersion": "8.9.4"
 }
